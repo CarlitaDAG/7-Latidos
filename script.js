@@ -21,3 +21,19 @@ function reveal(){
 }
 
 reveal();
+function mostrarAmistad(imagen,nombre,frase){
+
+    document.getElementById("amistad-img").src = imagen;
+
+    document.getElementById("amistad-name").innerText = nombre;
+
+    document.getElementById("amistad-frase").innerText = frase;
+}
+function mostrarCassette(imagen,nombre,latido){
+
+    document.getElementById("cassette-img").src = imagen;
+
+    document.getElementById("cassette-name").innerText = nombre;
+
+    document.getElementById("cassette-latido").innerText = latido;
+}
