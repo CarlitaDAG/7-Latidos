@@ -984,3 +984,167 @@ button:hover{
 
     text-shadow:0 0 10px rgba(255,105,180,0.2);
 }
+.songs{
+
+    padding:140px 20px;
+
+    background:
+    linear-gradient(
+        to bottom,
+        #ffe6f2,
+        #fff0f7
+    );
+
+    text-align:center;
+
+    color:#5e2b45;
+}
+
+.songs h2{
+
+    font-size:4rem;
+
+    margin-bottom:80px;
+}
+
+.character-songs{
+
+    margin-bottom:70px;
+}
+
+.character-songs h3{
+
+    font-size:2.2rem;
+
+    margin-bottom:25px;
+}
+
+.song-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+}
+
+.song-links a{
+
+    font-size:4rem;
+
+    text-decoration:none;
+
+    transition:0.4s;
+}
+
+.song-links a:hover{
+
+    transform:scale(1.3);
+
+    filter:drop-shadow(
+        0 0 12px rgba(255,105,180,0.7)
+    );
+}
+/* =========================
+   RESPONSIVE CELULAR
+========================= */
+
+@media(max-width:768px){
+
+    h1{
+
+        font-size:3rem;
+    }
+
+    h2{
+
+        font-size:2.3rem !important;
+    }
+
+    p{
+
+        font-size:1rem;
+    }
+
+    .hero{
+
+        padding:120px 20px;
+    }
+
+    .hero p{
+
+        font-size:1.1rem;
+    }
+
+    .libro-container,
+    .vistazos-container,
+    .eco{
+
+        flex-direction:column;
+    }
+
+    .libro-imagen img,
+    .vistazos-imagen img,
+    .eco img{
+
+        width:90%;
+    }
+
+    .card,
+    .secreto-card,
+    .song-card{
+
+        width:90%;
+    }
+
+    .universo-item{
+
+        padding:30px;
+    }
+
+    .universo-item h3{
+
+        font-size:1.5rem;
+    }
+
+    .universo-item p{
+
+        font-size:1rem;
+    }
+
+    .footer-content h2{
+
+        font-size:1.7rem;
+    }
+
+    .song-links a{
+
+        font-size:3rem;
+    }
+
+    .playlist h2,
+    .ecos h2,
+    .secretos h2,
+    .universo h2,
+    .vistazos h2{
+
+        font-size:2.5rem;
+    }
+
+    nav{
+
+        flex-direction:column;
+
+        gap:20px;
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+    }
+
+}
