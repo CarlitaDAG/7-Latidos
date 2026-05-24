@@ -1600,3 +1600,183 @@ img {
 
     box-shadow:0 0 30px rgba(255,105,180,0.5);
 }
+.timeline-section{
+
+    padding:140px 20px;
+
+    background:linear-gradient(
+        to bottom,
+        #fff5fa,
+        #ffe8f3
+    );
+
+    overflow:hidden;
+}
+
+.timeline-section h2{
+
+    text-align:center;
+
+    font-size:3.5rem;
+
+    color:#ff5ca8;
+
+    margin-bottom:100px;
+}
+
+.timeline-wrapper{
+
+    overflow-x:auto;
+
+    padding-bottom:40px;
+}
+
+.timeline-container{
+
+    position:relative;
+
+    display:flex;
+
+    gap:45px;
+
+    min-width:1500px;
+
+    padding:60px 40px;
+    align-items:center;
+}
+
+.timeline-line{
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    top:50%;
+
+    height:4px;
+
+    background:linear-gradient(
+        to right,
+        #ffb6d9,
+        #ff5ca8,
+        #d98cff
+    );
+
+    box-shadow:0 0 15px rgba(255,105,180,0.4);
+
+    transform:translateY(-50%);
+    z-index:1;
+}
+
+.timeline-card{
+
+    position:relative;
+
+    width:220px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:25px;
+
+    box-shadow:0 0 20px rgba(255,105,180,0.15);
+
+    transition:0.5s;
+
+    flex-shrink:0;
+
+    z-index:2;
+}
+
+.timeline-card:hover{
+
+    transform:translateY(-10px) scale(1.03);
+
+    box-shadow:0 0 40px rgba(255,105,180,0.35);
+}
+
+.timeline-card.top,
+.timeline-card.bottom{
+
+    margin-top:0;
+}
+
+.timeline-icon{
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+}
+
+.timeline-card h3{
+
+    color:#7a3c5c;
+
+    font-size:1rem;
+
+    margin-bottom:12px;
+}
+
+.timeline-card p{
+
+    color:#ff5ca8;
+
+    line-height:1.6;
+
+    font-size:0.85rem;
+}
+
+.timeline-wrapper::-webkit-scrollbar{
+
+    height:10px;
+}
+
+.timeline-wrapper::-webkit-scrollbar-thumb{
+
+    background:#ff9ccf;
+
+    border-radius:20px;
+}
+
+.timeline-wrapper::-webkit-scrollbar-track{
+
+    background:#ffe6f2;
+}
+
+@media(max-width:768px){
+
+    .timeline-section h2{
+
+        font-size:2.3rem;
+    }
+
+    .timeline-container{
+
+        gap:40px;
+
+        padding:100px 40px;
+
+        min-width:1800px;
+    }
+
+    .timeline-card{
+
+        width:260px;
+
+        padding:25px;
+    }
+
+    .timeline-card h3{
+
+        font-size:1.2rem;
+    }
+
+    .timeline-card p{
+
+        font-size:0.95rem;
+    }
+
+}
